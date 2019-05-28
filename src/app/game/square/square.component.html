@@ -1,0 +1,11 @@
+<button
+  class="btn"
+  [class.clickable]="_stateService.state.values[row][column] === '-'"
+  [class.not-clickable]="_stateService.state.values[row][column] !== '-'"
+  [disabled]="_stateService.state.values[row][column] !== '-'"
+  [class.player-x]="_stateService.state.values[row][column] === 'X'"
+  [class.player-0]="_stateService.state.values[row][column] === '0'"
+  (click)="_handleSquareClick()"
+>
+  {{ (_stateService.state$ | async).values[row][column] }}
+</button>

@@ -1,0 +1,24 @@
+.barra {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: lightgray;
+  margin-bottom: 10px;
+  width: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 2rem;
+}
+
+.player-x {
+  background-color: greenyellow;
+}
+.player-0 {
+  background-color: orange;
+}
+
+.endgame {
+  background-color: red;
+  color: white;
+}

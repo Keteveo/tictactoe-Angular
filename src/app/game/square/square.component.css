@@ -1,0 +1,25 @@
+.btn {
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.clickable {
+  cursor: pointer;
+  font-size: 2rem;
+  color: darkgrey;
+}
+
+.not-clickable {
+  cursor: not-allowed;
+  color: darkblue;
+  font-size: 2rem;
+}
+
+.player-x {
+  background-color: greenyellow;
+}
+.player-0 {
+  background-color: orange;
+}

@@ -1,0 +1,4 @@
+<div class="footer-bar" [class.endgame]="_stateService.state.movements === 9">
+  Number of movements: {{ (_stateService.state$ | async).movements }}
+</div>
+<button class="btn" (click)="_handleResetClick()">Reset Game</button>

@@ -1,0 +1,17 @@
+<div
+  class="barra"
+  [class.player-0]="_stateService.state.turn === 'PLAYER 0'"
+  [class.player-x]="_stateService.state.turn === 'PLAYER X'"
+  [class.endgame]="_stateService.state.movements === 9"
+>
+  <a
+    *ngIf="
+      _stateService.state.winner === 'none' && _stateService.state.movements < 9
+    "
+    >Turn of {{ (_stateService.state$ | async).turn }}
+  </a>
+  <a *ngIf="_stateService.state.winner !== 'none'"
+    >There is a winner: {{ (_stateService.state$ | async).winner }}</a
+  >
+  <a *ngIf="_stateService.state.movements === 9">No more movements</a>
+</div>

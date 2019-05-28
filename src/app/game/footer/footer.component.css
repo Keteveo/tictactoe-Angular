@@ -1,0 +1,26 @@
+.footer-bar {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: lightgray;
+  width: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.endgame {
+  background-color: red;
+  color: white;
+}
+
+.btn {
+  padding: 5px 10px 5px 10px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: red;
+  color: white;
+}
